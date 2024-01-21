@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="392eda09bae7a7c7cf418b12a34110a8c50a5d5916612fe6a49bf14071441f2a.html">Create A Product</a></span>
+                > <span class="truncate-60"><a
+                    href="1e12232929994c30189915c28540fb55bb2e149871cca42c5590faf72b021f42.html">The user successfully creates a product </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-01-2024 22:30</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Create A Product </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user I want to create the product on the serenity demo page
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="eb769a5608725af8b1e11d8b73bf9ee5f22fa7a1d934dca94b13b15ab2f04595.html">Test2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">The user successfully creates a product
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" Given Enter the credentials to enter the main page
+| strUser | strPassword |
+| admin | serenity |" width="1366"/>
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" User open up" width="1366"/>
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" User opens the Demo serenity is page" width="1366"/>
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" User open up (completed)" width="1366"/>
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" User login" width="1366"/>
+                <img src="c1624cba403e582e95e17d17dc5f91ca89461762702d36d70109bbc3ef03626a.png" title=" User enters 'admin' into where do we write user" width="1366"/>
+                <img src="b2d239a8750fab40d4961e65e03d566f3b4e115808a1d64e026dcb25b950a34c.png" title=" User enters 'admin' into where do we write user" width="1366"/>
+                <img src="b2d239a8750fab40d4961e65e03d566f3b4e115808a1d64e026dcb25b950a34c.png" title=" User enters 'admin' into where do we write user (completed)" width="1366"/>
+                <img src="b2d239a8750fab40d4961e65e03d566f3b4e115808a1d64e026dcb25b950a34c.png" title=" User enters 'serenity' into where do we write password" width="1366"/>
+                <img src="b43eb2ea2df6c1a44d4bfbd7019d28d2a9d9ddf26421bd38ce09ec68c0f31bbb.png" title=" User enters 'serenity' into where do we write password" width="1366"/>
+                <img src="b43eb2ea2df6c1a44d4bfbd7019d28d2a9d9ddf26421bd38ce09ec68c0f31bbb.png" title=" User enters 'serenity' into where do we write password (completed)" width="1366"/>
+                <img src="b43eb2ea2df6c1a44d4bfbd7019d28d2a9d9ddf26421bd38ce09ec68c0f31bbb.png" title=" User clicks on button that shows us the form to login" width="1366"/>
+                <img src="9b5fca6836ac23f78955e10f800f480abee465ba1fabeaf63415484bf96565ab.png" title=" User clicks on button that shows us the form to login" width="1366"/>
+                <img src="9b5fca6836ac23f78955e10f800f480abee465ba1fabeaf63415484bf96565ab.png" title=" User clicks on button that shows us the form to login (completed)" width="1366"/>
+                <img src="2c3b73248327c6368cb693fe011066e653c2ca13bb2748e4770c9296ee9193c7.png" title=" User login (completed)" width="1366"/>
+                <img src="2c3b73248327c6368cb693fe011066e653c2ca13bb2748e4770c9296ee9193c7.png" title=" Given Enter the credentials to enter the main page
+| strUser | strPassword |
+| admin | serenity | (completed)" width="1366"/>
+                <img src="b2739ceae23a930ecd148a52213f2b6932243b9669fe652ef17fe3320be1071c.png" title=" When the user creates the product" width="1366"/>
+                <img src="b2739ceae23a930ecd148a52213f2b6932243b9669fe652ef17fe3320be1071c.png" title=" User clicks main page" width="1366"/>
+                <img src="bc9e798a8bc3497bec2c789a76699829efd42e5d950356ad3c4246fa8fd414c1.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="0929e465d4ec5049a6f0b4af055581658017ca97d8538949f041343a29aa6a85.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="0929e465d4ec5049a6f0b4af055581658017ca97d8538949f041343a29aa6a85.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="0929e465d4ec5049a6f0b4af055581658017ca97d8538949f041343a29aa6a85.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="1615092ba7967020cb70117050cc4a0bb081c77cd5d9d120bc2d22b3d1d85e73.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="1615092ba7967020cb70117050cc4a0bb081c77cd5d9d120bc2d22b3d1d85e73.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="1615092ba7967020cb70117050cc4a0bb081c77cd5d9d120bc2d22b3d1d85e73.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="523102420f53acf65dfaee62e17701c7543bfc8d490a7acc94c6b0eedfd08892.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="523102420f53acf65dfaee62e17701c7543bfc8d490a7acc94c6b0eedfd08892.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="e8b44e370a7df3e5ae6299f5518e5e44360b299a7fb0ddeb7d51ee4955db806b.png" title=" User clicks main page (completed)" width="1366"/>
+                <img src="e8b44e370a7df3e5ae6299f5518e5e44360b299a7fb0ddeb7d51ee4955db806b.png" title=" User save product" width="1366"/>
+                <img src="c209e4287d76b9594534f2ace554a5f575623214b2ad072ff8f2c6a6e4ffb4b0.png" title=" User enters 'PRODUCTO2' into where do we write user" width="1366"/>
+                <img src="669e4c9e973c85f632d5d98904f387c763cd5632e02bd9d1a6bbce80ee374580.png" title=" User enters 'PRODUCTO2' into where do we write user" width="1366"/>
+                <img src="669e4c9e973c85f632d5d98904f387c763cd5632e02bd9d1a6bbce80ee374580.png" title=" User enters 'PRODUCTO2' into where do we write user (completed)" width="1366"/>
+                <img src="669e4c9e973c85f632d5d98904f387c763cd5632e02bd9d1a6bbce80ee374580.png" title=" User enters 'C:\Users\USER\Downloads\Proyecto_choucair\co.com.demo.serenity.reto\src\test\resources\images\producto.jpg' into where do we write user" width="1366"/>
+                <img src="669e4c9e973c85f632d5d98904f387c763cd5632e02bd9d1a6bbce80ee374580.png" title=" User enters 'C:\Users\USER\Downloads\Proyecto_choucair\co.com.demo.serenity.reto\src\test\resources\images\producto.jpg' into where do we write user (completed)" width="1366"/>
+                <img src="244f674b006109af950357707d017b336eb78b2e0031a40acb929e726b7e3e2d.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="c2d92e1cff3b414daf84b6f33100071fd15e8761f7219913859bb7bd01b2cab3.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="c2d92e1cff3b414daf84b6f33100071fd15e8761f7219913859bb7bd01b2cab3.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="c2d92e1cff3b414daf84b6f33100071fd15e8761f7219913859bb7bd01b2cab3.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="db6390372a98e7c04e00695606f2684cdc1b2a6444281ce55fbcda128592783d.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="db6390372a98e7c04e00695606f2684cdc1b2a6444281ce55fbcda128592783d.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="db6390372a98e7c04e00695606f2684cdc1b2a6444281ce55fbcda128592783d.png" title=" User enters 'Bigfoot Breweries' then hits [ENTER] into where do we write user" width="1366"/>
+                <img src="0d14eb974daffd65124bf3439719bab4610cf60c73a347346bcfd538f5c5712d.png" title=" User enters 'Bigfoot Breweries' then hits [ENTER] into where do we write user" width="1366"/>
+                <img src="a9a694884cbfe70706478c06f2fb5ff9319745410380d42cff20294fd971bdd9.png" title=" User enters 'Bigfoot Breweries' then hits [ENTER] into where do we write user (completed)" width="1366"/>
+                <img src="3512e42d71c2e113b68a7163cb4779be1cfdef4ca369fd299c7c9d39a7464a8d.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="dff86ac5b3db451714d24f3eadb64e6c35c42862acd9690306fac2d1c05f787d.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="dff86ac5b3db451714d24f3eadb64e6c35c42862acd9690306fac2d1c05f787d.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="dff86ac5b3db451714d24f3eadb64e6c35c42862acd9690306fac2d1c05f787d.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="59261b7f76058d5ea9b8f3f698c70867253a4de2f3e8ee25484daacb369141f8.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="59261b7f76058d5ea9b8f3f698c70867253a4de2f3e8ee25484daacb369141f8.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="dff86ac5b3db451714d24f3eadb64e6c35c42862acd9690306fac2d1c05f787d.png" title=" User enters 'Condiments' then hits [ENTER] into where do we write user" width="1366"/>
+                <img src="b0b3d425fe3ea4d80c4b17d27e8a08f0d405ef2d81453bcc2bfb762194630de2.png" title=" User enters 'Condiments' then hits [ENTER] into where do we write user" width="1366"/>
+                <img src="1e10ba9f5d80fa1a7807cd191e1c8f91f45b8af19ac6b915b9001a22b32bc08e.png" title=" User enters 'Condiments' then hits [ENTER] into where do we write user (completed)" width="1366"/>
+                <img src="1e10ba9f5d80fa1a7807cd191e1c8f91f45b8af19ac6b915b9001a22b32bc08e.png" title=" User enters '5' into where do we write user" width="1366"/>
+                <img src="240ffb31dcdc1753240fc7d1927e88ecbdfab6301ce65fde6dbce68a7dc21ae3.png" title=" User enters '5' into where do we write user" width="1366"/>
+                <img src="240ffb31dcdc1753240fc7d1927e88ecbdfab6301ce65fde6dbce68a7dc21ae3.png" title=" User enters '5' into where do we write user (completed)" width="1366"/>
+                <img src="240ffb31dcdc1753240fc7d1927e88ecbdfab6301ce65fde6dbce68a7dc21ae3.png" title=" User enters '10,00' into where do we write user" width="1366"/>
+                <img src="6af1144b0eea9b0535f5a6dfa7823d883d9f5a22192a06987a56bbe8141dc7ca.png" title=" User enters '10,00' into where do we write user" width="1366"/>
+                <img src="6af1144b0eea9b0535f5a6dfa7823d883d9f5a22192a06987a56bbe8141dc7ca.png" title=" User enters '10,00' into where do we write user (completed)" width="1366"/>
+                <img src="6af1144b0eea9b0535f5a6dfa7823d883d9f5a22192a06987a56bbe8141dc7ca.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="2f4e72450fd8666ceba4bcc00af2baa890f9c94c739e36bfd74d8768075a8cbf.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="2f4e72450fd8666ceba4bcc00af2baa890f9c94c739e36bfd74d8768075a8cbf.png" title=" User enters '2' into where do we write user (completed)" width="1366"/>
+                <img src="2f4e72450fd8666ceba4bcc00af2baa890f9c94c739e36bfd74d8768075a8cbf.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="7b41ed9b86652b32aab36efd0e2bd501faab802c762291f98cb6ecaa4df34b05.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="7b41ed9b86652b32aab36efd0e2bd501faab802c762291f98cb6ecaa4df34b05.png" title=" User enters '2' into where do we write user (completed)" width="1366"/>
+                <img src="7b41ed9b86652b32aab36efd0e2bd501faab802c762291f98cb6ecaa4df34b05.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="0339a48f708e77cb411a6bbad3b86d10f124d154fe85a9a92a29dfaf2d27e436.png" title=" User enters '2' into where do we write user" width="1366"/>
+                <img src="0339a48f708e77cb411a6bbad3b86d10f124d154fe85a9a92a29dfaf2d27e436.png" title=" User enters '2' into where do we write user (completed)" width="1366"/>
+                <img src="0339a48f708e77cb411a6bbad3b86d10f124d154fe85a9a92a29dfaf2d27e436.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="8dc645f5beee26d7bda3e15dc17a81d505ef0bc74e8a274cb28b3b51d8232608.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="8dc645f5beee26d7bda3e15dc17a81d505ef0bc74e8a274cb28b3b51d8232608.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="7e8349751e876074d398b7633bc8da1e6a86fefc2fe8ddb8e5e257ed9409f07f.png" title=" User save product (completed)" width="1366"/>
+                <img src="7e8349751e876074d398b7633bc8da1e6a86fefc2fe8ddb8e5e257ed9409f07f.png" title=" When the user creates the product (completed)" width="1366"/>
+                <img src="8b1ad934989a79bb9d6f3321bf25ce2034aed01092c385da0e818f91919cf5a6.png" title=" Then It validates that the product was created successfully" width="1366"/>
+                <img src="8b1ad934989a79bb9d6f3321bf25ce2034aed01092c385da0e818f91919cf5a6.png" title=" User text name product created" width="1366"/>
+                <img src="ddbd0b21e41f3192d369af62a6cd04375d4443bb7f4029ef6371051d6905716e.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="2fd64693f7bce7e947085d0b2fa66e8d730261f151eb92a95d8657da3634d553.png" title=" User clicks on where do we write user" width="1366"/>
+                <img src="2fd64693f7bce7e947085d0b2fa66e8d730261f151eb92a95d8657da3634d553.png" title=" User clicks on where do we write user (completed)" width="1366"/>
+                <img src="320e5743abcb1d4b46846a59b4f8b738d16d5e60b466dd4c27436b2aaa0a4ef9.png" title=" User enters 'PRODUCTO2' into where do we write user" width="1366"/>
+                <img src="4cb41f3e3268e59b457aa2f1c9a0fbbd7e509d7fd3756480c9d1b6f28f14f79d.png" title=" User enters 'PRODUCTO2' into where do we write user" width="1366"/>
+                <img src="4cb41f3e3268e59b457aa2f1c9a0fbbd7e509d7fd3756480c9d1b6f28f14f79d.png" title=" User enters 'PRODUCTO2' into where do we write user (completed)" width="1366"/>
+                <img src="4cb41f3e3268e59b457aa2f1c9a0fbbd7e509d7fd3756480c9d1b6f28f14f79d.png" title=" User text name product created (completed)" width="1366"/>
+                <img src="dc64750a88699d81a81fd7793721dd698b7b47a80d7681cf4433057a4278b213.png" title=" Then answer$$ lambda$420/345584390" width="1366"/>
+                <img src="96c6274f637c0c5d4f61277fdffdef609a3b0bdeb07e5e8d37326bf7c080eaf9.png" title=" Then answer$$ lambda$420/345584390 (completed)" width="1366"/>
+                <img src="96c6274f637c0c5d4f61277fdffdef609a3b0bdeb07e5e8d37326bf7c080eaf9.png" title=" Then It validates that the product was created successfully (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>

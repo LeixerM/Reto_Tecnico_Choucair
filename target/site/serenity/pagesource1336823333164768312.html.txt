@@ -1,0 +1,955 @@
+<html lang="es-ES" class="pro theme-azure-light full-height-page" data-bs-theme="light"><head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="username" content="admin">
+<link rel="home" id="ApplicationPath" href="/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href="/DynJS.axd/CssBundle.Base.css?v=32aAoevb_YQnXwBPBF5J5A" rel="stylesheet" type="text/css">
+
+<script type="application/json" id="ScriptCulture">{"DateOrder":"dmy","DateFormat":"dd/MM/yyyy","DateSeparator":"/","DateTimeFormat":"dd/MM/yyyy HH:mm:ss","DecimalSeparator":",","GroupSeparator":"."}</script>
+    <script src="/DynJS.axd/LocalText.Site.es-ES.Public.js?v=SznY4g0to11aqI-cUk9I1Q" type="text/javascript"></script>
+
+    <script src="/DynJS.axd/Bundle.Base.js?v=KLkOjVb5lrRLA6qO2D2-Kw" type="text/javascript"></script>
+
+<script type="module" src="/esm/Modules/Common/ScriptInit.js?v=dVZFDHU1eBJgRCkApIgKWw"></script>
+<script type="text/javascript">Q.ScriptData.set('Lookup.Administration.Language', new Q.Lookup({"idField":"LanguageId","textField":"LanguageName"}, 
+[{"Id":13,"LanguageId":"ar","LanguageName":"Arabic"},{"Id":14,"LanguageId":"bn","LanguageName":"Bangla"},{"Id":6,"LanguageId":"zh-CN","LanguageName":"Chinese (Simplified)"},{"Id":24,"LanguageId":"zh-TW","LanguageName":"Chinese (Traditional)"},{"Id":15,"LanguageId":"cs","LanguageName":"Czech"},{"Id":20,"LanguageId":"nl","LanguageName":"Dutch"},{"Id":1,"LanguageId":"en","LanguageName":"English"},{"Id":10,"LanguageId":"fa","LanguageName":"Farsi"},{"Id":12,"LanguageId":"fr","LanguageName":"French"},{"Id":5,"LanguageId":"de","LanguageName":"German"},{"Id":16,"LanguageId":"hi","LanguageName":"Hindi"},{"Id":17,"LanguageId":"id","LanguageName":"Indonesian"},{"Id":7,"LanguageId":"it","LanguageName":"Italian"},{"Id":18,"LanguageId":"ja","LanguageName":"Japanese"},{"Id":19,"LanguageId":"ko","LanguageName":"Korean"},{"Id":21,"LanguageId":"pl","LanguageName":"Polish"},{"Id":8,"LanguageId":"pt","LanguageName":"Portuguese"},{"Id":9,"LanguageId":"pt-BR","LanguageName":"Portuguese (Brazil)"},{"Id":22,"LanguageId":"ro","LanguageName":"Romanian"},{"Id":2,"LanguageId":"ru","LanguageName":"Russian"},{"Id":3,"LanguageId":"es","LanguageName":"Spanish"},{"Id":23,"LanguageId":"sv","LanguageName":"Swedish"},{"Id":4,"LanguageId":"tr","LanguageName":"Turkish"},{"Id":11,"LanguageId":"vi-VN","LanguageName":"Vietnamese (Vietnam)"}]
+));</script>
+<script type="text/javascript">Q.ScriptData.set('RemoteData.UserData', {"Username":"admin","DisplayName":"admin","IsAdmin":true,"Permissions":{"Northwind:General":true,"Northwind:Customer:Delete":true,"Northwind:Customer:Modify":true,"Northwind:Customer:View":true,"Administration:DataAuditLog":true,"Administration:DataExplorer":true,"EmailClient:Mailbox":true,"Administration:EmailQueue":true,"Organization:General":true,"Organization:BusinessUnits:Management":true,"Organization:Contacts:Management":true,"Meeting:General":true,"Meeting:Management":true,"WorkLog:Lookups":true,"WorkLog:Commercial":true,"WorkLog:Customer":true,"WorkLog:Management":true,"WorkLog:Employee":true,"WorkLog:Pricing":true,"Administration:Security":true,"Administration:Translation":true,"Role:Administrators":true,"Role:Developers":true,"Administration:General":true,"Role:Employees":true,"Role:NorthwindUsers":true,"Role:WorkLogCustomers":true,"Role:WorkLogManagers":true}});</script>
+<script type="application/json" id="RegisteredScripts">{"Columns.Serenity.Pro.Organization.Columns.ContactColumns":"638414002340076481","RemoteData.LocalText":"--226304817","Lookup.Northwind.Supplier":"XhVb-qyBsRPtLBmbKpGOVA","Form.WorkLog.Employee":"638414002340076624","ColumnsBundle":"638414002340076639","Columns.Serenity.Pro.Meeting.Columns.MeetingAttendeeColumns":"638414002340076651","Form.AdvancedSamples.OrderWizard":"638414002340076660","Form.AdvancedSamples.GoogleMapsForm":"638414002340076673","FormBundle":"638414002340076687","RemoteData.Administration.ImplicitPermissions":"638414002340076698","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.FieldName":"638414002340076712","Columns.Northwind.Product":"638414002340076723","Form.Northwind.Territory":"638414002340076742","LocalText.Site.tr-TR.Public":"KFqiyynszJG1Z5P7-KsovA","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaColumns":"638414002340076776","Form.Serenity.Pro.EmailClient.EmailCompose":"638414002340076789","Form.AdvancedSamples.DragDropSample":"638414002340076798","Columns.Serenity.Pro.Meeting.Columns.MeetingLocationColumns":"638414002340076808","Columns.Serenity.Pro.EmailQueue.EmailQueueColumns":"638414002340076830","Columns.WorkLog.EmployeePricing":"638414002340076842","Lookup.Administration.Language":"6hGfCpH8wKnrLo2YJjNMFg","Form.Northwind.OrderDetail":"638414002340076879","Columns.WorkLog.Invoice":"638414002340076890","RemoteData.Administration.PermissionKeys":"638414002340076904","Columns.Serenity.Pro.DataAuditLog.DataAuditLogColumns":"638414002340076915","Form.Administration.Role":"638414002340076927","Lookup.Northwind.CustomerCountry":"fzyYe_rinntCcIYK5czKwg","Columns.WorkLog.Customer":"638414002340076988","Form.Northwind.Customer":"638414002340077000","CssBundle.Base":"32aAoevb_YQnXwBPBF5J5A","Lookup.Northwind.Employee":"8H1Y2Ngv5BTmQ93CFbbZAQ","Lookup.Distinct.WorkLog.WorkLog.Year":"638414002340077080","Form.Northwind.Product":"638414002340077091","Columns.Serenity.Pro.Organization.Columns.BusinessUnitColumns":"638414002340077101","Form.Administration.Language":"638414002340077110","Form.Administration.User":"638414002340077118","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaForm":"638414002340077131","Form.Membership.Login":"638414002340077143","Form.Serenity.Pro.Meeting.Forms.MeetingLocationForm":"638414002340077161","Columns.WorkLog.WorkLog":"638414002340077171","Lookup.Northwind.Territory":"638414002340077185","Lookup.Serenity.Pro.Organization.Contact":"638414002340077202","Columns.WorkLog.Project":"638414002340077213","Form.BasicSamples.LookupFilterByMultiple":"638414002340077223","Lookup.WorkLog.Customer":"638414002340077241","Lookup.WorkLog.Project":"638414002340077255","Form.Serenity.Extensions.ResetPasswordRequest":"638414002340077275","Columns.Northwind.Territory":"638414002340077289","Lookup.Northwind.OrderShipCity":"QKaFx7izCLMy7GgrTZXDTA","TemplateBundle":"638414002340077354","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionRelevantColumns":"638414002340077368","Form.BasicSamples.FilteredLookupInDetail":"638414002340077375","Form.Membership.SignUp":"638414002340077381","Form.WorkLog.Invoice":"638414002340077392","Lookup.Administration.Role":"638414002340077408","Form.Serenity.Pro.Organization.Forms.BusinessUnitForm":"638414002340077418","Form.Serenity.Pro.DataAuditLog.DataAuditLogForm":"638414002340077430","Columns.AdvancedSamples.CustomerGrossSales":"638414002340077471","Lookup.Northwind.Region":"638414002340077488","Columns.Northwind.Category":"638414002340077500","Form.AdvancedSamples.InlineButtons":"638414002340077509","Form.Northwind.Region":"638414002340077519","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaTypeForm":"638414002340077532","Form.AdvancedSamples.EnumFlagsForm":"638414002340077540","Columns.Serenity.Pro.Meeting.Columns.MeetingTypeColumns":"638414002340077552","Form.Serenity.Pro.EmailQueue.EmailQueueForm":"638414002340077562","Form.Northwind.Category":"638414002340077571","Columns.Northwind.Order":"638414002340077579","Columns.Administration.Language":"638414002340077587","Form.Northwind.Shipper":"638414002340077595","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaRelevantColumns":"638414002340077606","Form.Serenity.Pro.Meeting.Forms.MeetingAttendeeForm":"638414002340077614","Lookup.Northwind.Category":"ARf_gzKlacidyGakML5PgA","Lookup.Northwind.Customer":"PjlcCJGk1yRhypppd2wUhA","Lookup.Serenity.Pro.Organization.BusinessUnit":"638414002340077703","Form.Northwind.Order":"638414002340077711","Form.Serenity.Extensions.ForgotPasswordRequest":"638414002340077722","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionColumns":"638414002340077733","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaRelevantForm":"638414002340077743","Columns.WorkLog.Employee":"638414002340077751","Form.Serenity.Extensions.ChangePasswordRequest":"638414002340077760","CssBundle.Pages/Dashboard":"HuMckRHJLXc8ZberVKDAIg","Lookup.WorkLog.Invoice":"638414002340077792","Columns.Serenity.Pro.Meeting.MeetingColumns":"638414002340077800","Form.BasicSamples.HarcodedValues":"638414002340077813","Columns.WorkLog.Currency":"638414002340077821","Form.WorkLog.Project":"638414002340077829","Form.BasicSamples.ChangingLookupText":"638414002340077837","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionRelevantForm":"638414002340077845","Columns.Administration.User":"638414002340077853","Bundle.Base":"KLkOjVb5lrRLA6qO2D2-Kw","Form.Serenity.Pro.EmailClient.EmailLogin":"638414002340077904","Columns.Northwind.Customer":"638414002340077915","Columns.Northwind.OrderDetail":"638414002340077922","Form.WorkLog.Customer":"638414002340077931","Lookup.Northwind.Shipper":"YiNdQd8_0PL4hf-7NRfgUA","RemoteData.PasswordStrengthRules":"638414002340077973","Columns.AdvancedSamples.DragDropSample":"638414002340077984","Form.WorkLog.Currency":"638414002340077995","Form.AdvancedSamples.LeafletForm":"638414002340078004","Form.Serenity.Pro.Meeting.MeetingForm":"638414002340078014","Form.BasicSamples.StaticTextBlock":"638414002340078022","Columns.Northwind.Shipper":"638414002340078030","Columns.Northwind.SalesByCategory":"638414002340078039","Lookup.Serenity.Pro.Meeting.MeetingAgendaType":"638414002340078052","Columns.Northwind.Region":"638414002340078060","LocalText.Site.en-US.Public":"BRPKSLtU4BTL_mBUxdBmWg","Lookup.Northwind.Product":"638414002340078091","RemoteData.UserData":"638414002340078101","Lookup.Northwind.OrderShipCountry":"zj9rB1F3ikVykVcCXk-k_g","Lookup.WorkLog.Tasks":"638414002340078141","Lookup.Serenity.Pro.Meeting.MeetingLocation":"638414002340078173","LocalText.Site.es-ES.Public":"SznY4g0to11aqI-cUk9I1Q","CssBundle.Base.rtl":"638414002340078191","Columns.BasicSamples.InlineImageInGrid":"638414002340078202","Columns.Administration.Role":"638414002340078211","Form.AdvancedSamples.PickerOrder":"638414002340078220","Columns.Northwind.Supplier":"638414002340078228","Lookup.Northwind.SupplierCountry":"638414002340078241","Form.AdvancedSamples.ProductExcelImport":"638414002340078251","Form.Serenity.Pro.Meeting.Forms.MeetingTypeForm":"638414002340078261","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.Tablename":"638414002340078274","Form.Northwind.Supplier":"638414002340078284","Lookup.Administration.User":"638414002340078297","Form.WorkLog.EmployeePricing":"638414002340078304","Lookup.WorkLog.Employee":"638414002340078316","Lookup.Northwind.CustomerCity":"H00QDrcxCRRGHzEE6x_eJQ","Form.AdvancedSamples.MultiDatesPicker":"638414002340078349","ColumnAndFormBundle":"OkI_9VC-EspXs-OAur1Wnw","Form.WorkLog.WorkLog":"638414002340078377","LocalText.Site.zh-CN.Public":"Dkj0A-co5ZnQzPJAyqXmwA","Lookup.Serenity.Pro.Meeting.MeetingType":"638414002340078406","Form.Membership.Elevate":"638414002340078415","Form.BasicSamples.PopulateLinkedData":"638414002340078422","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaTypeColumns":"638414002340078432","Lookup.Distinct.WorkLog.WorkLog.Month":"638414002340078447","Form.Serenity.Pro.Organization.Forms.ContactForm":"638414002340078458","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionForm":"638414002340078467","LocalText.Site.zh-TW.Public":"kAeqijpQ5_N9McZVoH60KA","Lookup.WorkLog.Currency":"638414002340078497"}</script>
+    
+    <script src="/DynJS.axd/Lookup.Northwind.Category.js?v=ARf_gzKlacidyGakML5PgA" type="text/javascript"></script>
+
+    <script src="/DynJS.axd/Lookup.Northwind.Supplier.js?v=XhVb-qyBsRPtLBmbKpGOVA" type="text/javascript"></script>
+
+
+    <title>Productos - StartSharp</title>
+</head>
+<body id="s-Page" class="s-sidebar-hovered" data-fhrouteinit="true">
+<div id="PageBackground" style="display: none"></div>
+    
+<aside class="s-sidebar" id="s-sidebar">
+    <div class="s-sidebar-band">
+        <ul class="s-sidebar-band-groups">
+            <li class="active">
+                <a class="s-sidebar-band-link" href="#s_sidebar_group1" title="StartSharp">
+                    <i class="s-sidebar-band-icon fa fa-home"></i>
+                </a>
+            </li>
+            <li class="">
+                <a class="s-sidebar-band-link" href="#s_sidebar_group2" title="Administration">
+                    <i class="s-sidebar-band-icon fa fa-tools"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="s-sidebar-band-middle">
+            <div class="s-sidebar-band-branding">
+                <img class="s-site-logo-img s-sidebar-band-logo">
+                    <span class="s-sidebar-band-title">Start</span><span class="s-sidebar-band-title2">Sharp</span>
+            </div>
+        </div>
+        <ul class="s-sidebar-band-actions">
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language">
+                    <i class="s-sidebar-band-icon fa fa-language"></i>
+                </a>
+                <ul class="dropdown-menu s-language-selection-menu">
+                <li><a class="dropdown-item" data-language="ar" href="javascript:;">Arabic</a></li><li><a class="dropdown-item" data-language="bn" href="javascript:;">Bangla</a></li><li><a class="dropdown-item" data-language="zh-CN" href="javascript:;">Chinese (Simplified)</a></li><li><a class="dropdown-item" data-language="zh-TW" href="javascript:;">Chinese (Traditional)</a></li><li><a class="dropdown-item" data-language="cs" href="javascript:;">Czech</a></li><li><a class="dropdown-item" data-language="nl" href="javascript:;">Dutch</a></li><li><a class="dropdown-item" data-language="en" href="javascript:;">English</a></li><li><a class="dropdown-item" data-language="fa" href="javascript:;">Farsi</a></li><li><a class="dropdown-item" data-language="fr" href="javascript:;">French</a></li><li><a class="dropdown-item" data-language="de" href="javascript:;">German</a></li><li><a class="dropdown-item" data-language="hi" href="javascript:;">Hindi</a></li><li><a class="dropdown-item" data-language="id" href="javascript:;">Indonesian</a></li><li><a class="dropdown-item" data-language="it" href="javascript:;">Italian</a></li><li><a class="dropdown-item" data-language="ja" href="javascript:;">Japanese</a></li><li><a class="dropdown-item" data-language="ko" href="javascript:;">Korean</a></li><li><a class="dropdown-item" data-language="pl" href="javascript:;">Polish</a></li><li><a class="dropdown-item" data-language="pt" href="javascript:;">Portuguese</a></li><li><a class="dropdown-item" data-language="pt-BR" href="javascript:;">Portuguese (Brazil)</a></li><li><a class="dropdown-item" data-language="ro" href="javascript:;">Romanian</a></li><li><a class="dropdown-item" data-language="ru" href="javascript:;">Russian</a></li><li><a class="dropdown-item" data-language="es" href="javascript:;">Spanish</a></li><li><a class="dropdown-item" data-language="sv" href="javascript:;">Swedish</a></li><li><a class="dropdown-item" data-language="tr" href="javascript:;">Turkish</a></li><li><a class="dropdown-item" data-language="vi-VN" href="javascript:;">Vietnamese (Vietnam)</a></li></ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme">
+                    <i class="s-sidebar-band-icon fa fa-fill-drip"></i>
+                </a>
+                <ul class="dropdown-menu s-theme-selection-menu">
+                    <li><a class="dropdown-item" data-theme="azure-light" href="javascript:;">Azure (Light)</a></li>
+                    <li><a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;">Cosmos (Dark)</a></li>
+                    <li><a class="dropdown-item" data-theme="glassy-light" href="javascript:;">Glassy (Light)</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown dropend">
+                <a href="javascript:;" class="s-sidebar-band-link s-user-profile-link" data-bs-toggle="dropdown" title="admin">
+                    <i class="s-sidebar-band-icon fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-md s-user-profile-menu">
+                    <div class="s-user-card p-1 mb-2 text-center border-bottom">
+                        <h2 class="s-user-avatar fs-1 mb-0">
+                            <i class="fa fa-user"></i>
+                        </h2>
+                        <p class="s-user-info fs-6 mb-1">
+                            admin
+                        </p>
+                    </div>
+                    <a class="dropdown-item" href="/Account/ChangePassword">
+                        <em class="icon fa fa-key"></em><span> Cambiar contraseña</span>
+                    </a>
+<!--#if (OpenIdClient)-->
+                            <a class="dropdown-item" href="/Account/ExternalLogins">
+                                <em class="icon fa fa-link"></em><span>External Logins</span>
+                            </a>                                
+<!--#endif-->
+                    <a class="dropdown-item" href="/Account/Signout">
+                        <em class="icon fa fa-sign-out-alt"></em><span> Cerrar sesión</span>
+                    </a>
+                </div>
+            </div>
+        </li>
+            <li class="s-sidebar-pane-toggle">
+                <a href="javascript:;" class="s-sidebar-band-link s-sidebar-pane-toggle-link" title="toggle sidebar">
+                    <i class="s-sidebar-band-icon fa fa-angle-double-left"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="s-sidebar-pane">
+        <div id="s-sidebar-search" class="s-sidebar-search m-3">
+            <i class="fa fa-search fa-flip-horizontal s-sidebar-search-icon"></i>
+            <input id="s-sidebar-search-input" type="text" class="w-100 s-sidebar-search-input" placeholder="Buscar">
+        </div>
+        <div class="s-sidebar-groups">
+                <div class="s-sidebar-group active" id="s_sidebar_group1">
+                    <h5 class="s-sidebar-group-title">StartSharp</h5>
+                        <ul class="s-sidebar-menu" id="s_sidebar_menu1">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/">
+                    <i class="s-sidebar-icon fa fa-tachometer"></i>
+                    <span class="s-sidebar-link-text">Tablero</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section active has-children">
+                <h6 class="s-sidebar-section-title">Módulos de demostración</h6>
+                <ul id="nav_menu1_2" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item active has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_1" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon fa fa-anchor"></i>
+                    <span class="s-sidebar-link-text">Northwind</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2" style="">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Customer">
+                    <i class="s-sidebar-icon fa fa-credit-card"></i>
+                    <span class="s-sidebar-link-text">Clientes</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Order">
+                    <i class="s-sidebar-icon fa fa-shopping-cart"></i>
+                    <span class="s-sidebar-link-text">Pedidos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item active">
+                <a class="s-sidebar-link" href="/Northwind/Product">
+                    <i class="s-sidebar-icon fa fa-cube"></i>
+                    <span class="s-sidebar-link-text">Productos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Supplier">
+                    <i class="s-sidebar-icon fa fa-truck"></i>
+                    <span class="s-sidebar-link-text">Proveedores</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Shipper">
+                    <i class="s-sidebar-icon fa fa-ship"></i>
+                    <span class="s-sidebar-link-text">Transportistas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Category">
+                    <i class="s-sidebar-icon fa fa-folder-o"></i>
+                    <span class="s-sidebar-link-text">Categorías</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Region">
+                    <i class="s-sidebar-icon fa fa-map-o"></i>
+                    <span class="s-sidebar-link-text">Regiones</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Territory">
+                    <i class="s-sidebar-icon fa fa-puzzle-piece"></i>
+                    <span class="s-sidebar-link-text">Territorios</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Reports">
+                    <i class="s-sidebar-icon fa fa-files-o"></i>
+                    <span class="s-sidebar-link-text">Informes</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_2" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon fa fa-magic"></i>
+                    <span class="s-sidebar-link-text">Muestras básicas</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_2_1" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Diálogos</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ChartInDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Gráfico en un diálogo</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/CloneableEntityDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Diálogo de entidad clonable</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/DefaultValuesInNewDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Valores predeterminados en el diálogo nuevo</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/DialogBoxes">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadros de diálogo</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/EntityDialogAsPanel/11077">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Diálogo de entidad como panel</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GetInsertedRecordId">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Obtener el ID de registro insertado</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/OtherFormInTab">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Otro formulario en pestaña</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/OtherFormInTabOneBar">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Otro formulario, una barra de herramientas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/PopulateLinkedData">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Poblar datos vinculados</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ReadOnlyDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Diálogo de sólo lectura</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/SerialAutoNumber">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Numeración automática serie</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_2_2" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editores</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ChangingLookupText">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cambiar el texto de búsqueda</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/FilteredLookupInDetailDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Búsqueda filtrada en detalle</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/LookupFilterByMultipleValues">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Filtro de búsqueda por múltiples valores</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/SelectWithHardcodedValues">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Seleccionar con valores codificados</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/StaticTextBlock">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Bloque de texto estático</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_2_3" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadrículas</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/CustomLinksInGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Enlaces personalizados en la cuadrícula</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/EnablingRowSelection">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Habilitar la selección de filas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GroupingAndSummariesInGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Agrupación y sum</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/GridFilteredByCriteria">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadrícula filtrada por criterios</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InitialValuesForQuickFilters">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Valor inicial para filtrado rápido</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InlineActionButtons">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Botones de acción en línea</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/InlineImageInGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Imagen en línea en cuadrícula</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/RemovingAddButton">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Eliminar el botón Agregar</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/ViewWithoutID">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Ver sin ID</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/BasicSamples/WrappedHeaders">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Encabezados envueltos</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_2_4" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Dynamic Navigation</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=1">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Beverages</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=2">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Condiments</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=3">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Confections</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=4">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Dairy Products</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=5">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Grains/Cereals</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=6">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Meat/Poultry</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=7">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Produce</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Northwind/Product?cat=8">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Seafood</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon fa fa-star premium-feature"></i>
+                    <span class="s-sidebar-link-text">Muestras avanzadas</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3_1" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tablas de datos</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/BasicInit">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Inicialización básica</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ServerSide">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Fuente del lado del servidor</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3_2" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editores</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/InputWithInlineButtons">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Entrada con botones en línea</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/MultiDatesPicker">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Selector de fechas múltiples</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ProductPicker">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Selector de productos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/EnumFlagsEditor">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editor de banderas de enumeración</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/GoogleMapsEditor">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Editor de Google Maps</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/LeafletEditor">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Leaflet Editor</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3_3" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Formularios</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/BootstrapFormList">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Formulario Bootstrap</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/EntityGridDialog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Diálogo de cuadrícula de entidad</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/OrderWizard">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Asistente de pedidos</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3_4" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadriculas</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/AutoColumnWidth">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Ancho de columna automático</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CardView">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Vista de tarjeta</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CustomizableSummaries">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Resúmenes personalizables</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/CancellableBulkAction">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Acción masiva cancelable</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ConditionalFormatting">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Formato condicional</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DragDropGrouping">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Arrastrar y soltar agrupación</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DragDropInTreeGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Arrastrar y soltar en la cuadrícula de árbol</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ExcelStyleFilters">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Filtrado estilo Excel</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/InlineEditing">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Edición en línea</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/LongRunningAction">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Acción de largo plazo</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/ProductExcelImport">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Importación de productos de Excel</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/QuickFilterCustomization">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Personalización de filtro rápido</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/SplitMasterDetail">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadrículas de detalle maestro divididas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/StoredProcedureGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadrícula de procedimiento almacenado</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/TreeGrid">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cuadrícula de árbol</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_3_5" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Misceláneo</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_3_5" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DataAuditLog">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Registro de auditoría de datos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/DataExplorer">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Explorador de datos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/EmailClient/Mailbox">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Cliente de correo electrónico (IMAP)</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/AdvancedSamples/IdleTimeout">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tiempo de inactividad (sesión) agotado</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link collapsed" href="#nav_menu1_2_4" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="s-sidebar-icon fa fa-code"></i>
+                    <span class="s-sidebar-link-text">UI Elements</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Components">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Components</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Icons">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Icons</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Tabs">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tabs &amp; Accordion</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Características Pro</h6>
+                <ul id="nav_menu1_3" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_1" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-sitemap premium-feature"></i>
+                    <span class="s-sidebar-link-text">Organización</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Organization/BusinessUnit">
+                    <i class="s-sidebar-icon fa fa-sitemap"></i>
+                    <span class="s-sidebar-link-text">Unidades de negocio</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Organization/Contact">
+                    <i class="s-sidebar-icon fa fa-address-book"></i>
+                    <span class="s-sidebar-link-text">Contactos</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_2" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-comments premium-feature"></i>
+                    <span class="s-sidebar-link-text">Reunión</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/Meeting">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Reuniones</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingAgendaType">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tipos de agenda de reuniones</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingLocation">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Ubicaciones de reuniones</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Meeting/MeetingType">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Tipos de reuniones</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon fa fa-hourglass-end premium-feature"></i>
+                    <span class="s-sidebar-link-text">Registro de trabajo</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/WorkLog">
+                    <i class="s-sidebar-icon fa fa-clock-o"></i>
+                    <span class="s-sidebar-link-text">Registros de trabajo</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Invoice">
+                    <i class="s-sidebar-icon fa fa-file-text"></i>
+                    <span class="s-sidebar-link-text">Facturas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item has-children">
+                <a class="s-sidebar-link" href="#nav_menu1_3_3_3" data-bs-toggle="collapse">
+                    <i class="s-sidebar-icon s-sidebar-noicon"></i>
+                    <span class="s-sidebar-link-text">Configuración</span>
+<em class="s-sidebar-menu-toggle fa fa-angle-right"></em>                </a>
+                    <ul id="nav_menu1_3_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3_3">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Employee">
+                    <i class="s-sidebar-icon fa fa-users"></i>
+                    <span class="s-sidebar-link-text">Empleados</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Customer">
+                    <i class="s-sidebar-icon fa fa-user"></i>
+                    <span class="s-sidebar-link-text">Clientes</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Project">
+                    <i class="s-sidebar-icon fa fa-book"></i>
+                    <span class="s-sidebar-link-text">Proyectos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/EmployeePricing">
+                    <i class="s-sidebar-icon fa fa-envelope"></i>
+                    <span class="s-sidebar-link-text">Precios</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/WorkLog/Currency">
+                    <i class="s-sidebar-icon fa fa-usd"></i>
+                    <span class="s-sidebar-link-text">Monedas</span>
+                </a>
+        </li>
+                    </ul>
+        </li>
+                    </ul>
+        </li>
+                </ul>
+        </li>
+                        </ul>
+                </div>
+                <div class="s-sidebar-group" id="s_sidebar_group2">
+                    <h5 class="s-sidebar-group-title">Administración</h5>
+                        <ul class="s-sidebar-menu" id="s_sidebar_menu2">
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">General</h6>
+                <ul id="nav_menu2_1" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/DataAuditLog">
+                    <i class="s-sidebar-icon fa fa-history premium-feature"></i>
+                    <span class="s-sidebar-link-text">Registro de auditoría de datos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/DataExplorer">
+                    <i class="s-sidebar-icon fa fa-database premium-feature"></i>
+                    <span class="s-sidebar-link-text">Explorador de datos</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/EmailQueue">
+                    <i class="s-sidebar-icon fa fa-envelope-o premium-feature"></i>
+                    <span class="s-sidebar-link-text">Cola de correo electrónico</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/ExceptionLog/" target="_blank">
+                    <i class="s-sidebar-icon fa fa-ban"></i>
+                    <span class="s-sidebar-link-text">Registro de excepciones</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Localización</h6>
+                <ul id="nav_menu2_2" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Language">
+                    <i class="s-sidebar-icon fa fa-comments"></i>
+                    <span class="s-sidebar-link-text">Idiomas</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Translation">
+                    <i class="s-sidebar-icon fa fa-comment-o"></i>
+                    <span class="s-sidebar-link-text">Traducciones</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+        <li class="s-sidebar-item s-sidebar-section has-children">
+                <h6 class="s-sidebar-section-title">Seguridad</h6>
+                <ul id="nav_menu2_3" class="s-sidebar-section-menu">
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/Role">
+                    <i class="s-sidebar-icon fa fa-lock"></i>
+                    <span class="s-sidebar-link-text">Roles</span>
+                </a>
+        </li>
+        <li class="s-sidebar-item">
+                <a class="s-sidebar-link" href="/Administration/User">
+                    <i class="s-sidebar-icon fa fa-users"></i>
+                    <span class="s-sidebar-link-text">Gestión de usuarios</span>
+                </a>
+        </li>
+                </ul>
+        </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+</aside>
+
+<header class="navbar sticky-top s-mobile-header">
+    <button class="s-sidebar-toggler" type="button" id="s-sidebar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="s-mobile-header-branding">
+        <img class="s-site-logo-img s-mobile-header-logo">
+    </div>
+    <ul class="s-mobile-header-actions">
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language">
+                    <i class="s-mobile-header-icon fa fa-language"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end s-language-selection-menu">
+                <li><a class="dropdown-item" data-language="ar" href="javascript:;">Arabic</a></li><li><a class="dropdown-item" data-language="bn" href="javascript:;">Bangla</a></li><li><a class="dropdown-item" data-language="zh-CN" href="javascript:;">Chinese (Simplified)</a></li><li><a class="dropdown-item" data-language="zh-TW" href="javascript:;">Chinese (Traditional)</a></li><li><a class="dropdown-item" data-language="cs" href="javascript:;">Czech</a></li><li><a class="dropdown-item" data-language="nl" href="javascript:;">Dutch</a></li><li><a class="dropdown-item" data-language="en" href="javascript:;">English</a></li><li><a class="dropdown-item" data-language="fa" href="javascript:;">Farsi</a></li><li><a class="dropdown-item" data-language="fr" href="javascript:;">French</a></li><li><a class="dropdown-item" data-language="de" href="javascript:;">German</a></li><li><a class="dropdown-item" data-language="hi" href="javascript:;">Hindi</a></li><li><a class="dropdown-item" data-language="id" href="javascript:;">Indonesian</a></li><li><a class="dropdown-item" data-language="it" href="javascript:;">Italian</a></li><li><a class="dropdown-item" data-language="ja" href="javascript:;">Japanese</a></li><li><a class="dropdown-item" data-language="ko" href="javascript:;">Korean</a></li><li><a class="dropdown-item" data-language="pl" href="javascript:;">Polish</a></li><li><a class="dropdown-item" data-language="pt" href="javascript:;">Portuguese</a></li><li><a class="dropdown-item" data-language="pt-BR" href="javascript:;">Portuguese (Brazil)</a></li><li><a class="dropdown-item" data-language="ro" href="javascript:;">Romanian</a></li><li><a class="dropdown-item" data-language="ru" href="javascript:;">Russian</a></li><li><a class="dropdown-item" data-language="es" href="javascript:;">Spanish</a></li><li><a class="dropdown-item" data-language="sv" href="javascript:;">Swedish</a></li><li><a class="dropdown-item" data-language="tr" href="javascript:;">Turkish</a></li><li><a class="dropdown-item" data-language="vi-VN" href="javascript:;">Vietnamese (Vietnam)</a></li></ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme">
+                    <i class="s-mobile-header-icon fa fa-fill-drip"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end s-theme-selection-menu">
+                    <li><a class="dropdown-item" data-theme="azure-light" href="javascript:;">Azure (Light)</a></li>
+                    <li><a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;">Cosmos (Dark)</a></li>
+                    <li><a class="dropdown-item" data-theme="glassy-light" href="javascript:;">Glassy (Light)</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="javascript:;" class="s-mobile-header-link s-user-profile-link" data-bs-toggle="dropdown" title="admin">
+                    <i class="s-mobile-header-icon fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-md dropdown-menu-end s-user-profile-menu">
+                    <div class="s-user-card p-1 mb-2 text-center border-bottom">
+                        <h2 class="s-user-avatar fs-1 mb-0">
+                            <i class="fa fa-user"></i>
+                        </h2>
+                        <p class="s-user-info fs-6 mb-1">
+                            admin
+                        </p>
+                    </div>
+                    <a class="dropdown-item" href="/Account/ChangePassword">
+                        <em class="icon fa fa-key"></em><span> Cambiar contraseña</span>
+                    </a>
+<!--#if (OpenIdClient)-->
+                            <a class="dropdown-item" href="/Account/ExternalLogins">
+                                <em class="icon fa fa-link"></em><span>External Logins</span>
+                            </a>                                
+<!--#endif-->
+                    <a class="dropdown-item" href="/Account/Signout">
+                        <em class="icon fa fa-sign-out-alt"></em><span> Cerrar sesión</span>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</header>
+    <main class="s-main">
+        <section class="content">
+
+                <link href="/Serenity.Demo.Northwind/index.css?v=w_gm2gQuEG797pWitX3V2w" rel="stylesheet" type="text/css">
+
+    <script src="/Serenity.Demo.Northwind/index.js?v=SUH6ZglL-DRVSxUTXABgkA" type="text/javascript"></script>
+
+
+<div id="GridDiv" class="s-ProductGrid s-DataGrid require-layout route-handler responsive-height"><div class="grid-title"><div class="title-text">Productos</div></div><div class="grid-toolbar s-Serenity-Toolbar s-Toolbar clearfix"><div class="s-QuickSearchBar"><span class="quick-search-icon"><i></i></span><input type="text" class="s-Serenity-QuickSearchInput s-QuickSearchInput" title="Ingrese el texto para buscar" placeholder="Buscar" id="ProductGrid0_QuickSearchInput"></div><div class="tool-group"><div class="tool-button add-button icon-tool-button" data-action="add"><span class="button-inner"><i class="fa fa-plus-circle text-green"></i> Nuevo Producto</span></div><div class="tool-button refresh-button icon-tool-button no-text" data-action="refresh" title="Actualizar"><span class="button-inner"><i class="fa fa-refresh text-blue"></i></span></div><div class="tool-button column-picker-button icon-tool-button no-text" data-action="column-picker" title="Selector de columnas"><span class="button-inner"><i class="fa fa-th-list text-blue"></i></span></div></div><div class="tool-group"><div class="tool-button export-xlsx-button icon-tool-button no-text" title="Excel"><span class="button-inner"><i class="fa fa-file-excel"></i></span></div><div class="tool-button export-pdf-button no-text" title="PDF"><span class="button-inner"></span></div></div><div class="tool-group"><div class="tool-button apply-changes-button disabled"><span class="button-inner">Save Changes</span></div></div><div class="clear"></div><div class="quick-filters-bar s-Serenity-QuickFilterBar s-QuickFilterBar clear"><div class="quick-filter-item" data-qffield="Discontinued"><span class="quick-filter-label">Discontinuado</span><div class="select2-container s-Serenity-SelectEditor s-SelectEditor" id="s2id_ProductGrid0_QuickFilter_Discontinued"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1"> </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1">   </ul></div></div><input type="text" id="ProductGrid0_QuickFilter_Discontinued" placeholder=" " class="s-Serenity-SelectEditor s-SelectEditor select2-offscreen" tabindex="-1" title=""></div><div class="quick-filter-item" data-qffield="SupplierID"><span class="quick-filter-label">Proveedor</span><div class="select2-container s-Serenity-LookupEditor s-LookupEditor" id="s2id_ProductGrid0_QuickFilter_SupplierID"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-2"> </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen2" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen2_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-2">   </ul></div></div><input type="text" id="ProductGrid0_QuickFilter_SupplierID" placeholder=" " maxlength="40" class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""></div><div class="quick-filter-item" data-qffield="CategoryID"><span class="quick-filter-label">Categoría</span><div class="select2-container select2-container-multi s-Serenity-LookupEditor s-LookupEditor" id="s2id_ProductGrid0_QuickFilter_CategoryID"><ul class="select2-choices">  <li class="select2-search-field">    <label for="s2id_autogen3" class="select2-offscreen"></label>    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen3" placeholder="" style="width: 197px;">  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">No se encontraron resultados</li></ul></div></div><input type="text" id="ProductGrid0_QuickFilter_CategoryID" placeholder=" " maxlength="15" class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1"></div></div></div><div class="grid-container slick-container ltr sleekgrid_61316 ui-widget sleek-vars" style="overflow: hidden; outline: 0px; position: relative; --sleek-row-height: 36px; --sleek-cell-height: 36px; --sleek-top-panel-height: 30px; --sleek-grouping-panel-height: 30px; --sleek-headerrow-height: 34px; --sleek-footerrow-height: 30px; --l0: 0px; --r0: 1210px; --l1: 80px; --r1: 931px; --l2: 359px; --r2: 878px; --l3: 412px; --r3: 706px; --l4: 584px; --r4: 534px; --l5: 756px; --r5: 384px; --l6: 906px; --r6: 288px; --l7: 1002px; --r7: 192px; --l8: 1098px; --r8: 96px; --l9: 1194px; --r9: 0px;"><div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"></div><div class="slick-header ui-state-default"><div class="slick-header-columns" style="left: -1000px; width: 2297px; user-select: none;" unselectable="on"><div class="slick-header-column ui-state-default slick-header-sortable" data-id="ProductID" id="sleekgrid_61316ProductID" title="" style="width: 80px" data-c="0"><span class="slick-column-name">ID</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="ProductName" id="sleekgrid_61316ProductName" title="" style="width: 279px" data-c="1"><span class="slick-column-name">Nombre del producto</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default align-center slick-header-sortable" data-id="Discontinued" id="sleekgrid_61316Discontinued" title="" style="width: 53px" data-c="2"><span class="slick-column-name">Discontinuado</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="SupplierCompanyName" id="sleekgrid_61316SupplierCompanyName" title="" style="width: 172px" data-c="3"><span class="slick-column-name">Proveedor</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="CategoryName" id="sleekgrid_61316CategoryName" title="" style="width: 172px" data-c="4"><span class="slick-column-name">Categoría</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="QuantityPerUnit" id="sleekgrid_61316QuantityPerUnit" title="" style="width: 150px" data-c="5"><span class="slick-column-name">Cantidad por unidad</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="UnitPrice" id="sleekgrid_61316UnitPrice" title="" style="width: 96px" data-c="6"><span class="slick-column-name">Precio unitario</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="UnitsInStock" id="sleekgrid_61316UnitsInStock" title="" style="width: 96px" data-c="7"><span class="slick-column-name">Unidades en Stock</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="UnitsOnOrder" id="sleekgrid_61316UnitsOnOrder" title="" style="width: 96px" data-c="8"><span class="slick-column-name">Unidades en pedido</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div><div class="slick-header-column ui-state-default slick-header-sortable" data-id="ReorderLevel" id="sleekgrid_61316ReorderLevel" title="" style="width: 96px" data-c="9"><span class="slick-column-name">Nivel de Reorden</span><span class="slick-sort-indicator"></span><div class="slick-resizable-handle" draggable="true"></div></div></div></div><div class="slick-headerrow ui-state-default" style="display: none"><div class="slick-headerrow-columns" style="width: 1290px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 1297px;" width="1297px"></div></div><div class="slick-top-panel-scroller ui-state-default" style="display: none"><div class="slick-top-panel" style="width: 10000px"></div></div><div class="slick-viewport" tabindex="0" hidefocus="" style="overflow: auto; height: 304.609px;"><div class="grid-canvas" tabindex="0" hidefocus="" style="height: 2916px; width: 1290px;"><div class="ui-widget-content slick-row even" style="top:0px"><div class="slick-cell l0 r0 align-right"><a href="#Product/17" data-item-type="Product" data-item-id="17" class="s-EditLink s-ProductLink">17</a></div><div class="slick-cell l1 r1"><a href="#Product/17" data-item-type="Product" data-item-id="17" class="s-EditLink s-ProductLink">Alice Mutton</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick  checked"></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7" selected="">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6" selected="">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="20 - 1 kg tins" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="39"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="0"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="0"></div></div><div class="ui-widget-content slick-row odd" style="top:36px"><div class="slick-cell l0 r0 align-right"><a href="#Product/3" data-item-type="Product" data-item-id="3" class="s-EditLink s-ProductLink">3</a></div><div class="slick-cell l1 r1"><a href="#Product/3" data-item-type="Product" data-item-id="3" class="s-EditLink s-ProductLink">Aniseed Syrup</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1" selected="">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2" selected="">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="12 - 550 ml bottles" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="10"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="13"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="70"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="25"></div></div><div class="ui-widget-content slick-row even" style="top:72px"><div class="slick-cell l0 r0 align-right"><a href="#Product/40" data-item-type="Product" data-item-id="40" class="s-EditLink s-ProductLink">40</a></div><div class="slick-cell l1 r1"><a href="#Product/40" data-item-type="Product" data-item-id="40" class="s-EditLink s-ProductLink">Boston Crab Meat</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19" selected="">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8" selected="">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="24 - 4 oz tins" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="18,4"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="123"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="30"></div></div><div class="ui-widget-content slick-row odd" style="top:108px"><div class="slick-cell l0 r0 align-right"><a href="#Product/60" data-item-type="Product" data-item-id="60" class="s-EditLink s-ProductLink">60</a></div><div class="slick-cell l1 r1"><a href="#Product/60" data-item-type="Product" data-item-id="60" class="s-EditLink s-ProductLink">Camembert Pierrot</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28" selected="">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4" selected="">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="15 - 300 g rounds" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="34"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="19"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="0"></div></div><div class="ui-widget-content slick-row even" style="top:144px"><div class="slick-cell l0 r0 align-right"><a href="#Product/18" data-item-type="Product" data-item-id="18" class="s-EditLink s-ProductLink">18</a></div><div class="slick-cell l1 r1"><a href="#Product/18" data-item-type="Product" data-item-id="18" class="s-EditLink s-ProductLink">Carnarvon Tigers</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7" selected="">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8" selected="">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="16 kg pkg." maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="62,5"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="42"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="0"></div></div><div class="ui-widget-content slick-row odd" style="top:180px"><div class="slick-cell l0 r0 align-right"><a href="#Product/1" data-item-type="Product" data-item-id="1" class="s-EditLink s-ProductLink">1</a></div><div class="slick-cell l1 r1"><a href="#Product/1" data-item-type="Product" data-item-id="1" class="s-EditLink s-ProductLink">Chai</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1" selected="">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1" selected="">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="10 boxes x 20 bags" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="18"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="39"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="10"></div></div><div class="ui-widget-content slick-row even" style="top:216px"><div class="slick-cell l0 r0 align-right"><a href="#Product/2" data-item-type="Product" data-item-id="2" class="s-EditLink s-ProductLink">2</a></div><div class="slick-cell l1 r1"><a href="#Product/2" data-item-type="Product" data-item-id="2" class="s-EditLink s-ProductLink">Chang</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1" selected="">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1" selected="">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="24 - 12 oz bottles" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="19"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="17"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="40"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="25"></div></div><div class="ui-widget-content slick-row odd" style="top:252px"><div class="slick-cell l0 r0 align-right"><a href="#Product/39" data-item-type="Product" data-item-id="39" class="s-EditLink s-ProductLink">39</a></div><div class="slick-cell l1 r1"><a href="#Product/39" data-item-type="Product" data-item-id="39" class="s-EditLink s-ProductLink">Chartreuse verte</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18" selected="">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1" selected="">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="750 cc per bottle" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="18"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="69"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="5"></div></div><div class="ui-widget-content slick-row even" style="top:288px"><div class="slick-cell l0 r0 align-right"><a href="#Product/4" data-item-type="Product" data-item-id="4" class="s-EditLink s-ProductLink">4</a></div><div class="slick-cell l1 r1"><a href="#Product/4" data-item-type="Product" data-item-id="4" class="s-EditLink s-ProductLink">Chef Anton's Cajun Seasoning</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2" selected="">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2" selected="">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="48 - 6 oz jars" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="22"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="53"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="0"></div></div><div class="ui-widget-content slick-row odd" style="top:324px"><div class="slick-cell l0 r0 align-right"><a href="#Product/5" data-item-type="Product" data-item-id="5" class="s-EditLink s-ProductLink">5</a></div><div class="slick-cell l1 r1"><a href="#Product/5" data-item-type="Product" data-item-id="5" class="s-EditLink s-ProductLink">Chef Anton's Gumbo Mix</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick  checked"></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2" selected="">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2" selected="">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="36 boxes" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="21,35"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="0"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="0"></div></div><div class="ui-widget-content slick-row even" style="top:360px"><div class="slick-cell l0 r0 align-right"><a href="#Product/48" data-item-type="Product" data-item-id="48" class="s-EditLink s-ProductLink">48</a></div><div class="slick-cell l1 r1"><a href="#Product/48" data-item-type="Product" data-item-id="48" class="s-EditLink s-ProductLink">Chocolade</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22" selected="">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3" selected="">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="10 pkgs." maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="12,75"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="15"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="70"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="25"></div></div><div class="ui-widget-content slick-row odd" style="top:396px"><div class="slick-cell l0 r0 align-right"><a href="#Product/38" data-item-type="Product" data-item-id="38" class="s-EditLink s-ProductLink">38</a></div><div class="slick-cell l1 r1"><a href="#Product/38" data-item-type="Product" data-item-id="38" class="s-EditLink s-ProductLink">Côte de Blaye</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18" selected="">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1" selected="">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="12 - 75 cl bottles" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="263,5"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="17"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="15"></div></div><div class="ui-widget-content slick-row even" style="top:432px"><div class="slick-cell l0 r0 align-right"><a href="#Product/58" data-item-type="Product" data-item-id="58" class="s-EditLink s-ProductLink">58</a></div><div class="slick-cell l1 r1"><a href="#Product/58" data-item-type="Product" data-item-id="58" class="s-EditLink s-ProductLink">Escargots de Bourgogne</a></div><div class="slick-cell l2 r2 align-center"><span class="check-box no-float readonly slick-edit-preclick "></span></div><div class="slick-cell l3 r3"><select class="edit" data-field="SupplierID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="18">Aux joyeux ecclésiastiques</option><option value="16">Bigfoot Breweries</option><option value="5">Cooperativa de Quesos 'Las Cabras'</option><option value="27" selected="">Escargots Nouveaux</option><option value="1">Exotic Liquids</option><option value="29">Forêts d'érables</option><option value="14">Formaggi Fortini s.r.l.</option><option value="28">Gai pâturage</option><option value="24">G'day, Mate</option><option value="3">Grandma Kelly's Homestead</option><option value="11">Heli Süßwaren GmbH &amp; Co. KG</option><option value="23">Karkki Oy</option><option value="20">Leka Trading</option><option value="21">Lyngbysild</option><option value="25">Ma Maison</option><option value="6">Mayumi's</option><option value="19">New England Seafood Cannery</option><option value="2">New Orleans Cajun Delights</option><option value="13">Nord-Ost-Fisch Handelsgesellschaft mbH</option><option value="15">Norske Meierier</option><option value="26">Pasta Buttini s.r.l.</option><option value="7">Pavlova, Ltd.</option><option value="9">PB Knäckebröd AB</option><option value="12">Plutzer Lebensmittelgroßmärkte AG</option><option value="10">Refrescos Americanas LTDA</option><option value="8">Specialty Biscuits, Ltd.</option><option value="17">Svensk Sjöföda AB</option><option value="4">Tokyo Traders</option><option value="22">Zaanse Snoepfabriek</option></select></div><div class="slick-cell l4 r4"><select class="edit" data-field="CategoryID" style="width: 100%; max-width: 100%"><option value="">--</option><option value="1">Beverages</option><option value="2">Condiments</option><option value="3">Confections</option><option value="4">Dairy Products</option><option value="5">Grains/Cereals</option><option value="6">Meat/Poultry</option><option value="7">Produce</option><option value="8" selected="">Seafood</option></select></div><div class="slick-cell l5 r5"><input type="text" class="edit string" data-field="QuantityPerUnit" value="24 pieces" maxlength="20"></div><div class="slick-cell l6 r6 align-right"><input type="text" class="edit numeric" data-field="UnitPrice" value="13,25"></div><div class="slick-cell l7 r7 align-right"><input type="text" class="edit numeric" data-field="UnitsInStock" value="62"></div><div class="slick-cell l8 r8 align-right"><input type="text" class="edit numeric" data-field="UnitsOnOrder" value="0"></div><div class="slick-cell l9 r9 align-right"><input type="text" class="edit numeric" data-field="ReorderLevel" value="20"></div></div></div></div><div class="slick-footerrow ui-state-default" style="display: none"><div class="slick-footerrow-columns" style="width: 1290px;"><div class="slick-footerrow-column l0 r0 ui-state-default align-right" data-c="0"></div><div class="slick-footerrow-column l1 r1 ui-state-default" data-c="1"></div><div class="slick-footerrow-column l2 r2 ui-state-default align-center" data-c="2"></div><div class="slick-footerrow-column l3 r3 ui-state-default" data-c="3"></div><div class="slick-footerrow-column l4 r4 ui-state-default" data-c="4"></div><div class="slick-footerrow-column l5 r5 ui-state-default" data-c="5"></div><div class="slick-footerrow-column l6 r6 ui-state-default align-right" data-c="6"></div><div class="slick-footerrow-column l7 r7 ui-state-default align-right" data-c="7"></div><div class="slick-footerrow-column l8 r8 ui-state-default align-right" data-c="8"></div><div class="slick-footerrow-column l9 r9 ui-state-default align-right" data-c="9"></div></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 1297px;" width="1297px"></div></div><div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"></div></div><div class="s-Serenity-FilterDisplayBar s-FilterDisplayBar"><div><a class="reset" title="Limpiar filtro" style="display: none;"></a><a class="edit">Editar filtro</a><div class="current" style="display: none;"><span class="cap">Filtro activo:</span><a class="txt">[Ninguno]</a></div></div></div><div class="s-Serenity-SlickPager s-SlickPager slick-pg"><div class="slick-pg-in"><div class="slick-pg-grp slick-pg-grp-size"><select class="slick-pg-size" name="rp"><option value="20">20</option><option value="100" selected="selected">100</option><option value="500">500</option><option value="2500">2500</option></select></div><div class="slick-pg-grp slick-pg-grp-firstprev"><div class="slick-pg-first slick-pg-btn"><span class="slick-pg-btn-span"></span></div><div class="slick-pg-prev slick-pg-btn"><span class="slick-pg-btn-span"></span></div></div><div class="slick-pg-grp slick-pg-grp-control"><span class="slick-pg-control"><span class="slick-pg-pagetext">Página</span><input class="slick-pg-current mx-1" type="text" size="4" value="1"><span class="slick-pg-pagesep px-1">/</span><span class="slick-pg-total">1</span></span></div><div class="slick-pg-grp slick-pg-grp-nextlast"><div class="slick-pg-next slick-pg-btn"><span class="slick-pg-btn-span"></span></div><div class="slick-pg-last slick-pg-btn"><span class="slick-pg-btn-span"></span></div></div><div class="slick-pg-grp slick-pg-grp-reload"><div class="slick-pg-reload slick-pg-btn"><span class="slick-pg-btn-span"></span></div></div><div class="slick-pg-grp slick-pg-grp-stat"><span class="slick-pg-stat">Mostrando desde 1 hasta 81 de 81 registros totales</span></div></div></div></div>
+
+<script type="module">
+    Serenity.gridPageInit(Serenity.Demo.Northwind.ProductGrid);
+</script>
+        </section>
+    </main>
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><span role="status" aria-live="polite" class="select2-hidden-accessible"></span><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div></body></html>

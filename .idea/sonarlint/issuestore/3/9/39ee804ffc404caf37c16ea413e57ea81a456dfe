@@ -1,0 +1,7 @@
+
+5
+java:S1700"Rename field "sessionUser"(ÂıÃ­üÿÿÿÿ
+„
+java:S4165"iRemove this useless assignment; "sessionUser" already holds the assigned value along all execution paths.(×çæÅüÿÿÿÿ
+J
+java:S1656"/Remove or correct this useless self-assignment.(×çæÅüÿÿÿÿ
